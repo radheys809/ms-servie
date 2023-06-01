@@ -1,0 +1,17 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /address-app/api
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true
+  datasource:
+    password:
+    username: root
+    url: jdbc:mysql://localhost:3306/address_app
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: address-app
